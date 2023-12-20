@@ -8,48 +8,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DKD technology</title>
     <link rel="stylesheet" href="CSS/index.css">
-    <!--
-    <link rel="stylesheet" href="CSS/outline-prototype-safe.css">
-    -->
+    <script src="JS/active-menu.js"></script>
 </head>
 <body>
-<div class="image-top"></div>
-
 <header>
     <nav>
         <ul>
             <li><a href="index.html" class="active"><img src="CSS/images/logo1.png" alt="Логотип" class="logo"></a></li>
             <li><a href="#about">О нас</a></li>
-            <li><a href="#products">Продукты</a></li>
-            <li><a href="#products">Вакансии</a></li>
-            <li><a href="#products">Контакты</a></li>
-            <li><a href="#products">Услуги</a></li>
+            <li><a href="products.html">Продукты</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
         </ul>
     </nav>
-    <form class="inputbox">
-        <input required="required"/>
-        <button type="reset" class="del"></button>
-    </form>
 </header>
 
+<!-- Slideshow container start -->
+
+<div class="container">
+    <img src="CSS/images/subscribe.jpeg" alt="Snow" style="width:100%; filter: brightness(80%)">
+    <div class="centered">
+        Ваш успех
+        <br>
+        на нашем материале
+        <br>
+        <button class="learn-more">Узнать больше</button>
+    </div>
+</div>
+
+
+<!-- Slideshow container end -->
+
+<!-- Timeline start -->
 <main>
-    <section id="about">
-        <h2>О нас</h2>
-        <article>
-            <h3>История</h3>
-            <p>Наша компания была основана в 1986 году...</p>
-        </article>
-    </section>
-
-
-    <section id="products">
-        <h2>Продукты</h2>
-        <article>
-            <h3>Продукты для гибкой упаковки</h3>
-            <p>Мы производим высококачественные пленки...</p>
-        </article>
-    </section>
+    <div id="about" class="about-section">
+        <div class="timeline">
+            <div class="timeline-container left">
+                <div class="content">
+                    <h2>2002</h2>
+                    <p>Основание DKD Tech, специализирующейся на производстве высококачественных пленок и
+                        гибкой упаковки для различных отраслей.</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="content">
+                    <h2>2005</h2>
+                    <p>DKD Tech запускает линию по производству специализированной упаковки для
+                        промышленного кабеля, укрепляя своё положение на рынке.</p>
+                </div>
+            </div>
+            <div class="timeline-container left">
+                <div class="content">
+                    <h2>2009</h2>
+                    <p>Внедрение собственного исследовательского центра для разработки новых
+                        технологий в химической промышленности, что позволяет компании стать лидером инноваций.</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="content">
+                    <h2>2012</h2>
+                    <p>Расширение спектра услуг за счёт введения резки, ламинации, перфорации
+                        горячими иглами и нанесения защитных покрытий.</p>
+                </div>
+            </div>
+            <div class="timeline-container left">
+                <div class="content">
+                    <h2>2015</h2>
+                    <p>DKD Tech получает серию патентов на уникальные технологии нанесения покрытий,
+                        значительно повышающих износостойкость и долговечность материалов.</p>
+                </div>
+            </div>
+            <div class="timeline-container right">
+                <div class="content">
+                    <h2>2018</h2>
+                    <p>Запуск производства экологически чистых биоразлагаемых пленок, подтверждая
+                        стремление компании к устойчивому развитию и заботе об окружающей среде.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
+<!-- Timeline end -->
+
+<!-- Table start -->
+<div class="table-container">
+    <h2>Ознакомьтесь с нашими продуктами и услугами</h2>
+    <div class="row">
+        <div class="column">
+            <table>
+                <tr>
+                    <th>Продукты</th>
+                    <th>Сегмент рынка</th>
+                    <th>Примеры</th>
+                </tr>
+                <tr>
+                    <td>38Polywhite</td>
+                    <td>Двухсторонняя этикетка</td>
+                    <td>Водка "Эталон"</td>
+                </tr>
+                <tr>
+                    <td>PolyLLen (M/M)и PolyLLen (M/W) </td>
+                    <td>Косметика</td>
+                    <td>Пробники</td>
+                </tr>
+                <tr>
+                    <td>20Polyclear MAT</td>
+                    <td>Самоклеящиеся этикетки</td>
+                    <td>Этикетки для бытовой химии</td>
+                </tr>
+            </table>
+            <button class="href-button" onclick="window.location.href='products.html';">Наши продукты</button>
+        </div>
+
+        <div class="column">
+            <table>
+                <tr>
+                    <th>Услуги</th>
+                    <th>Сегмент рынка</th>
+                    <th>Примеры</th>
+                </tr>
+                <tr>
+                    <td>Нансесение покрытий</td>
+                    <td>УФ полиграфия</td>
+                    <td>QR codes</td>
+                </tr>
+                <tr>
+                    <td>Резка </td>
+                    <td>Строительство, гибкая упаковка, термоэтикетка</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Перфорация</td>
+                    <td>Пищевая промышленность</td>
+                    <td>"Ягодное лукошко"</td>
+                </tr>
+            </table>
+            <button class="href-button" onclick="window.location.href='services.html';">Наши услуги</button>
+        </div>
+    </div>
+</div>
+<!-- Table end -->
 
 <footer>
     <p>© 2023 DKD tech</p>

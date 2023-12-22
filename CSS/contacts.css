@@ -1,0 +1,42 @@
+:root {
+    --dark: #0C243C;
+    --light: #C9D1D5;
+    --fountain: #55C2C3;
+    --grey: #7E8C9C;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: Arial, sans-serif;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--fountain);
+    border-radius: 10px;
+}
+
+.contact-info h1 {
+    text-align: center;
+    color: var(--light);
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info span {
+    color: var(--grey);
+}
+
+.contact-info a {
+    color: var(--grey);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: var(--light);
+}

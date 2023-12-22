@@ -1,10 +1,10 @@
 function newElement() {
-    var tr = document.createElement("tr");
+    let tr = document.createElement("tr");
 
-    var service = document.getElementById("myService").value;
-    var marketSegment = document.getElementById("myMarketSegment").value;
-    var deadline = document.getElementById("myDeadline").value;
-    var orderVolume = document.getElementById("myOrderVolume").value;
+    let service = document.getElementById("myService").value;
+    let marketSegment = document.getElementById("myMarketSegment").value;
+    let deadline = document.getElementById("myDeadline").value;
+    let orderVolume = document.getElementById("myOrderVolume").value;
 
     if (service === '' || marketSegment === '' || deadline === '' || orderVolume === '') {
         alert("You must fill out all fields!");
@@ -25,8 +25,8 @@ function newElement() {
 }
 
 function addCloseEvent() {
-    var closebtns = document.getElementsByClassName("close");
-    for (var i = 0; i < closebtns.length; i++) {
+    let closebtns = document.getElementsByClassName("close");
+    for (let i = 0; i < closebtns.length; i++) {
         closebtns[i].addEventListener("click", function() {
             this.parentElement.parentElement.style.display = 'none';
             // Save to localStorage

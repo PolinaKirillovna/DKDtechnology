@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/services.css">
     <script src="JS/active-menu.js"></script>
+    <script src="JS/form-handler.js"></script>
 </head>
 <body>
 <header>
@@ -48,11 +49,45 @@
         <div class="s-box">
             <div class="bar"></div>
             <img alt="3" src="CSS/images/spray-gun.png" />
-            <h1>Нансесение покрытий</h1>
+            <h1>Нанесение покрытий</h1>
             <p>Долговечность и яркость изображений, которые выделят вас на рынке.</p>
             <a class="s-btn" href="contacts.html">Подробнее</a>
         </div>
     </div>
+</section>
+
+
+<section class="order-list">
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">to <font color="#55C2C3">ORDER</font> list</h2>
+        <select id="myService" placeholder="Service...">
+            <option value="service1">Перфорация горячими иглами</option>
+            <option value="service2">Резка</option>
+            <option value="service2">Нанесение покрытий</option>
+        </select>
+        <select id="myMarketSegment" placeholder="Market Segment...">
+            <option value="segment1">Косметика</option>
+            <option value="segment1">Упаковка</option>
+            <option value="segment1">Производство силового кабеля</option>
+            <option value="segment1">Самоклеющиеся этикетки</option>
+            <option value="segment1">Строительство</option>
+            <option value="segment1">УФ полиграфия</option>
+            <option value="segment2">Другое</option>
+        </select>
+        <input type="text" id="myDeadline" placeholder="Deadline...">
+        <input type="text" id="myOrderVolume" placeholder="Order Volume...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+
+    <table id="myTable">
+        <tr>
+            <th>Услуги</th>
+            <th>Сегмент рынка</th>
+            <th>Сроки</th>
+            <th>Объем планируемого заказа</th>
+            <th></th>
+        </tr>
+    </table>
 </section>
 
 <footer>

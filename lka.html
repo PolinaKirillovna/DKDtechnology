@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DKD technology company website">
+    <meta name="keywords" content="DKD, technology, упаковка, этикетка, промышленность">
+    <meta name="author" content="Derevitskaya Polina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKA</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/lka.css">
+    <script src="JS/lka.js"></script>
+    <script src="JS/get-info.js"></script>
+    <script src="JS/active-menu.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><img src="CSS/images/logo1.png" alt="Логотип" class="logo"></a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="products.html">Продукты</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="lka.html" id="lka" class="active">ЛКА</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<div id="loginContainer" style="text-align: center;">
+    <h2 id="loginText">Пожалуйста, войдите в аккаунт администратора для дальнейших действий</h2>
+    <button id="loginBtn" style="font-size: 20px; padding: 10px 20px;">Войти</button>
+</div>
+
+<button id="logoutBtn" style="display: none; font-size: 20px; padding: 10px 20px;">Выйти</button>
+<div id="content" style="display: none;">
+    <div id="app">
+        <form id="userForm">
+            <input type="text" id="userId" placeholder="Введите ID пользователя">
+            <button type="submit" style="font-size: 20px; padding: 10px 20px;">Найти пользователя</button>
+        </form>
+        <div id="loader" style="display: none;">Загрузка...</div>
+        <div id="userInfo"></div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2023 DKD tech</p>
+</footer>
+
+</body>
+</html>

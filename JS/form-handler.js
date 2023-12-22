@@ -12,7 +12,7 @@ function newElement() {
         tr.innerHTML = '<td>' + service + '</td><td>' + marketSegment + '</td><td>' + deadline + '</td><td>' + orderVolume + '</td><td><span class="close">\u00D7</span></td>';
         document.getElementById("myTable").appendChild(tr);
 
-        // Save to localStorage
+
         localStorage.setItem('myTable', document.getElementById("myTable").innerHTML);
     }
 
@@ -35,7 +35,6 @@ function addCloseEvent() {
     }
 }
 
-// Load from localStorage
 window.onload = function() {
     if(localStorage.getItem('myTable')) {
         document.getElementById("myTable").innerHTML = localStorage.getItem('myTable');

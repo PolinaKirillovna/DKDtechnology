@@ -1,7 +1,6 @@
-
 (function() {
     document.addEventListener('DOMContentLoaded', function() {
-        // Подсветка активного пункта меню
+
         var menuItems = document.querySelectorAll('nav ul li a');
         var currentLocation = document.location.href;
 
@@ -13,7 +12,7 @@
             }
         });
 
-        // Вывод статистики загрузки
+
         var footer = document.querySelector('footer');
         if (window.performance) {
             var timeSincePageLoad = Math.round(Date.now() - performance.timing.navigationStart);
